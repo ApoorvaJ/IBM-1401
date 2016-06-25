@@ -15,6 +15,6 @@ Here's a pertinent quote from Wikipedia about the use of the machine in our part
 
 The 1401 has a variable instruction length. The machine uses a variant of BCD as an encoding scheme, with support for alphabets and some special characters. In each byte, 6 bits are for data, one bit is for parity, and one bit is a word mark bit, which is used to denote the beginning of an instruction.
 
-In this emulator, I have used a simpler scheme for encoding that is more inline with the ASCII in modern computers. I have simply allocated two arrays of the 1401's full capacity of 16000 bytes, and used one for data and one for storing word marks. This makes it simpler to store and debug the data, and I can avoid the 1404<--->ASCII encoding. The rest of the booting and program execution process is described in the Wikipedia article.
+In this emulator, I have used a simpler scheme for encoding that is more inline with the ASCII in modern computers. I have simply allocated two arrays of the 1401's full capacity of 16000 bytes, and used one for data and one for storing word marks. This makes it simpler to store and debug the data, and I can avoid the 1401<--->ASCII encoding. The rest of the booting and program execution process is described in the Wikipedia article.
 
-This project could be a starting point for implementing the remaining instructon set of the machine if you are so inclined. Happy hacking. :)
+This project could be a starting point for implementing the remaining instruction set of the machine if you are so inclined. Happy hacking. :)
